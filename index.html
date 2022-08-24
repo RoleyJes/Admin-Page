@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PROJECT CSS -->
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Admin Dashboard</title>
+</head>
+
+<body>
+  <div class="body-container">
+    <!-- HEADER -->
+    <div class="heading">
+      <div class="logo">
+        <img src="imgs/logo.svg" alt="logo">
+      </div>
+      <div class="search-bar">
+        <ion-icon name="search"></ion-icon>
+        <input type="text" placeholder="Search">
+      </div>
+
+      <div class="admin">
+        <ion-icon name="notifications"></ion-icon>
+        <img class="admin-img" src="imgs/customer-3.jpg" alt="admin">
+        <div>
+          <h5>Opeoluwa Samuel</h5>
+          <small>Administrator</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="cont">
+      <!-- THE SIDE-BAR -->
+      <aside>
+        <a href="#" class="side-bar-link active">
+          <ion-icon name="grid-outline"></ion-icon>
+          <h5>Dashboard</h5>
+        </a>
+        <a href="#" class="side-bar-link">
+          <ion-icon name="person-outline"></ion-icon>
+          <h5>Profile</h5>
+        </a>
+        <a href="#" class="side-bar-link">
+          <ion-icon name="receipt-outline"></ion-icon>
+          <h5>Orders</h5>
+        </a>
+        <a href="#" class="side-bar-link">
+          <ion-icon name="analytics-outline"></ion-icon>
+          <h5>Analytics</h5>
+        </a>
+        <a href="#" class="side-bar-link">
+          <ion-icon name="reader-outline"></ion-icon>
+          <h5>Products</h5>
+        </a>
+        <a href="#" class="side-bar-link">
+          <ion-icon name="mail-outline"></ion-icon>
+          <h5>Message</h5>
+        </a>
+        <a href="#" class="side-bar-link logout">
+          <!-- <img src="imgs/logout.svg" alt="exit"> -->
+          <ion-icon name="log-out-outline"></ion-icon>
+          <h5>LogOut</h5>
+        </a>
+      </aside>
+
+      <!-- MAIN SECTION -->
+      <main>
+        <!-- INSIGHTS -->
+        <div class="insights-cont">
+          <div class="insights-top">
+            <h3>Insights</h3>
+            <div class="insight-calendar">
+              <div>
+                <h5>Day</h5>
+              </div>
+              <div>
+                <h5>Week</h5>
+              </div>
+              <div class="insight-calendar-active">
+                <h5>Month</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="insights-bottom">
+            <div class="insights-bottom-card">
+              <div class="border-img"><img src="imgs/insights-border.svg" alt=""></div>
+
+              <small>Balance <ion-icon name="eye-off"></ion-icon></small>
+              <div class="insights-money">
+                <h3><span>NGN</span> 198,500</h3>
+                <img src="imgs/chart.svg" alt="">
+              </div>
+            </div>
+            <div class="insights-bottom-card">
+              <div class="border-img income">
+                <img src="imgs/insights-border2.svg" alt="">
+              </div>
+              <small>Income <ion-icon name="eye-off"></ion-icon></small>
+              <div class="insights-money">
+                <h3><span>NGN </span>72,400</h3>
+                <img src="imgs/chart3.svg" class="income-img" alt="">
+              </div>
+            </div>
+            <div class="insights-bottom-card">
+              <div class="border-img expense">
+                <img src="imgs/insights-border3.svg" alt="">
+              </div>
+              <small>Expense <ion-icon name="eye-off"></ion-icon></small>
+              <div class="insights-money">
+                <h3><span>NGN </span> 20,010</h3>
+                <img src="imgs/chart2.svg" class="expense-img" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FUNCTIONS -->
+        <div class="functions">
+          <h3>Functions</h3>
+          <div class="functions-card-cont">
+            <div class="function-card">
+              <div class="function-border">
+                <img src="imgs/function-border-red.svg" alt="">
+              </div>
+              <div class="function-card-icon">
+                <img src="imgs/tax1.svg" alt="">
+              </div>
+              <h5>Tax Payments</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="function-card">
+              <div class="function-border">
+                <img src="imgs/function-border-yellow.svg" alt="">
+              </div>
+              <div class="function-card-icon">
+                <img src="imgs/energy.svg" alt="">
+              </div>
+              <h5>Energy Payments</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="function-card">
+              <div class="function-border">
+                <img src="imgs/function-border-blue.svg" alt="">
+              </div>
+              <div class="function-card-icon">
+                <img src="imgs/water.svg" alt="">
+              </div>
+              <h5>Water Bills</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="function-card">
+              <div class="function-border">
+                <img src="imgs/function-border-purple.svg" alt="">
+              </div>
+              <div class="function-card-icon">
+                <img src="imgs/travel.svg" alt="">
+              </div>
+              <h5>Travel & Hotels</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="function-card">
+              <div class="function-border">
+                <img src="imgs/function-border-green.svg" alt="">
+              </div>
+              <div class="function-card-icon">
+                <img src="imgs/waste.svg" alt="">
+              </div>
+              <h5>Waste Management System</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="function-card">
+              <div class="function-border">
+                <img src="imgs/function-border-red.svg" alt="">
+              </div>
+              <div class="function-card-icon">
+                <img src="imgs/tax1.svg" alt="">
+              </div>
+              <h5>Tax Payments</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="function-card">
+              <div class="function-border">
+                <img src="imgs/function-border-yellow.svg" alt="">
+              </div>
+              <div class="function-card-icon">
+                <img src="imgs/energy.svg" alt="">
+              </div>
+              <h5>Energy Payments</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="function-card">
+              <div class="function-border">
+                <img src="imgs/function-border-blue.svg" alt="">
+              </div>
+              <div class="function-card-icon">
+                <img src="imgs/water.svg" alt="">
+              </div>
+              <h5>Water Bills</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="function-card">
+              <div class="function-border">
+                <img src="imgs/function-border-purple.svg" alt="">
+              </div>
+              <div class="function-card-icon">
+                <img src="imgs/travel.svg" alt="">
+              </div>
+              <h5>Travel & Hotels</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- RIGHT SECTION -->
+      <div class="right-section">
+        <!-- RECENT TRANSACTIONS -->
+        <div class="recent">
+          <div class="recent-top">
+            <h3>Recent Transactions</h3>
+            <small>View More <ion-icon name="chevron-forward-outline"></ion-icon></small>
+          </div>
+          <div class="recent-transactions">
+            <div class="transaction">
+              <div class="function-card-icon">
+                <img src="imgs/tax1.svg" alt="">
+              </div>
+              <div class="transaction-details">
+                <p>Lagos State Tax Commission</p>
+                <small>Feb 18, 2022 at 12:04PM</small>
+              </div>
+              <h5>-#3000.00</h5>
+            </div>
+            <div class="transaction">
+              <div class="function-card-icon">
+                <img src="imgs/energy.svg" alt="">
+              </div>
+              <div class="transaction-details">
+                <p>Energy Payment</p>
+                <small>Feb 18, 2022 at 12:04PM</small>
+              </div>
+              <h5>-#3000.00</h5>
+            </div>
+            <div class="transaction">
+              <div class="function-card-icon">
+                <img src="imgs/water.svg" alt="">
+              </div>
+              <div class="transaction-details">
+                <p>Water Bills</p>
+                <small>Feb 18, 2022 at 12:04PM</small>
+              </div>
+              <h5>-#3000.00</h5>
+            </div>
+            <div class="transaction">
+              <div class="function-card-icon">
+                <img src="imgs/waste.svg" alt="">
+              </div>
+              <div class="transaction-details">
+                <p>Waste Management</p>
+                <small>Feb 18, 2022 at 12:04PM</small>
+              </div>
+              <h5>-#3000.00</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- ALL PAYMENTS -->
+        <div class="payments">
+          <div class="payment-top">
+            <h3>All Payments</h3>
+            <div class="payment-top-date">
+              <ion-icon name="calendar-outline"></ion-icon>
+              <p>Monthly</p>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+          </div>
+
+          <!-- ALL PAYMENTS --MIDDLE -->
+          <div class="payment-calendar-grid">
+            <div class="payment-daily">
+              <small>Daily</small>
+              <h4>NGN 0.0</h4>
+            </div>
+            <div class="payment-monthly">
+              <small>Monthly</small>
+              <h4>NGN 30,784.0</h4>
+            </div>
+            <div class="payment-Yearly">
+              <small>Yearly</small>
+              <h4>NGN 122,569.0</h4>
+            </div>
+          </div>
+
+          <!-- ALL PAYMENTS --BOTTOM -->
+          <div class="payment-chart-cont">
+            <div class="payment-chart-img-cont">
+              <img src="imgs/payment-circle.svg" alt="">
+              <div class="payment-chart-inner">
+                <small>Energy</small>
+                <h5>NGN 50,000.0</h5>
+              </div>
+            </div>
+
+            <div class="payment-chart-keys">
+              <div>
+                <div class="tax circle"></div>
+                <h5>Tax</h5>
+              </div>
+              <div>
+                <div class="energy circle"></div>
+                <h5>Energy</h5>
+              </div>
+              <div>
+                <div class="water circle"></div>
+                <h5>Water</h5>
+              </div>
+              <div>
+                <div class="travel circle"></div>
+                <h5>Travel</h5>
+              </div>
+              <div>
+                <div class="waste circle"></div>
+                <h5>Waste</h5>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ION-ICON -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- PROJECT -->
+  <script src="script.js"></script>
+</body>
+
+</html>

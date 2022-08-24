@@ -1,0 +1,495 @@
+/************************* HEADING **********************/
+.heading {
+  height: 5.5rem;
+  width: 99%;
+  background-color: var(--color-white);
+  border-radius: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 50% auto auto;
+  gap: 1rem;
+  align-content: center;
+  padding: 2rem;
+  /* position: fixed;
+  z-index: 1; */
+}
+
+.heading .logo img {
+  width: 6rem;
+}
+
+.search-bar {
+  max-height: 3rem;
+  width: 20rem;
+  position: relative;
+}
+
+.search-bar ion-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.5rem;
+  color: var(--color-gray);
+}
+
+.heading input[type='text'] {
+  border-radius: var(--middle-border-radius);
+  height: 100%;
+  width: 100%;
+  font-size: 0.8rem;
+  background-color: var(--color-gray-variant);
+  color: var(--color-gray);
+  padding: 1rem 2rem;
+}
+
+.heading input[type='text']::placeholder {
+  color: var(--color-gray);
+  font-size: 0.7rem;
+}
+
+.admin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.admin .admin-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.admin ion-icon {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+}
+
+.admin div small {
+  margin-top: 0.2rem;
+}
+
+/********************** SIDE-BAR ******************/
+aside {
+  height: 80%; /* Change to 80vh if you're having issues with the percentage */
+  background-color: var(--color-white);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 1rem;
+}
+
+aside a {
+  height: 2.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1rem;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease;
+}
+
+aside a.active {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border-radius: var(--middle-border-radius);
+}
+
+aside a:hover {
+  color: var(--color-primary);
+}
+
+aside a:hover ion-icon {
+  margin-left: 0.6rem;
+}
+
+aside a.active:hover {
+  color: var(--color-white);
+}
+
+aside a.active:hover ion-icon {
+  margin-left: 0.2rem;
+}
+
+aside a ion-icon {
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+}
+
+aside a h5 {
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+aside a:last-child {
+  position: absolute;
+  bottom: 2rem;
+}
+
+aside .logout img {
+  width: 1.3rem;
+}
+
+/********************** MAIN-SECTION ******************/
+
+/********************** INSIGHTS ******************/
+
+main .insights-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main .insights-top {
+  display: grid;
+  grid-template-columns: auto 16rem;
+  align-items: center;
+  max-height: 2.2rem;
+}
+
+main .insights-top h5 {
+  font-weight: 500;
+}
+
+main .insights-top h5 {
+  font-size: 0.8rem;
+}
+
+main .insights-top .insight-calendar {
+  background-color: var(--color-white);
+  border-radius: var(--middle-border-radius);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  height: 2.2rem;
+  max-height: 100%;
+  padding: 0.2rem;
+}
+
+main .insight-calendar div {
+  padding: 0.45rem;
+  text-align: center;
+}
+
+main .insight-calendar div h5 {
+  cursor: pointer;
+}
+
+main .insight-calendar-active {
+  background-color: var(--color-primary);
+  border-radius: var(--middle-border-radius);
+  color: var(--color-white);
+}
+
+main .insights-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+main .insights-bottom-card {
+  background-color: var(--color-white);
+  border-radius: var(--middle-border-radius);
+  border: 4px solid var(--color-black-variant2);
+  padding: 0.6rem 1rem;
+  position: relative;
+}
+
+main .insights-bottom-card .border-img img {
+  width: 0.3rem;
+  position: absolute;
+  left: -0.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+main .insights-bottom-card .income img {
+  /* color: var(--color-green); */
+  fill: var(--color-green);
+}
+
+main .insights-bottom-card small {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+main .insights-bottom-card small ion-icon {
+  font-size: 1rem;
+}
+
+main .insights-money {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+main .insights-money h3 {
+  font-weight: 500;
+}
+
+main .insights-money span {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+main .insights-money img {
+  width: 4rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+}
+
+/********************** FUNCTIONS ******************/
+main .functions {
+  margin-top: 2rem;
+}
+
+main .functions .functions-card-cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+main .function-card {
+  background-color: var(--color-white);
+  border-radius: var(--middle-border-radius);
+  padding: 1rem;
+  position: relative;
+}
+
+main .function-card .function-border img {
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.3rem;
+  width: 15rem;
+}
+
+main .function-card-icon,
+.transaction .function-card-icon {
+  padding: 1.6rem;
+  border: 1px solid var(--color-gray-variant);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .function-card-icon img {
+  width: 1rem;
+}
+
+main .function-card h5 {
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+
+main .function-card p {
+  color: var(--color-black-variant);
+  line-height: 1.5;
+}
+
+/********************** RIGHT SECTION ******************/
+
+/********************** RECENT TRANSACTIONS ******************/
+
+.right-section .recent {
+  background-color: var(--color-white);
+  padding: 1.5rem 1rem 1rem 1rem;
+  border-radius: var(--right-border-radius);
+}
+
+.right-section .recent-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.recent-top small {
+  display: flex;
+  align-items: flex-end;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.recent-transactions {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction {
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: 4rem auto 4rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.transaction:hover {
+  border-radius: 20px;
+  box-shadow: 0rem 0.3rem 3rem rgba(132, 139, 200, 0.18);
+}
+
+.transaction .function-card-icon {
+  padding: 0.6rem;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.05);
+}
+
+.transaction .function-card-icon img {
+  width: 0.7rem;
+}
+
+.transaction .transaction-details p {
+  font-size: 0.77rem;
+  font-weight: 700;
+}
+
+.transaction .transaction-details small {
+  font-size: 0.6rem;
+}
+
+/********************** ALL PAYMENTS ******************/
+.right-section .payments {
+  background-color: var(--color-white);
+  border-radius: var(--right-border-radius);
+  padding: 1rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.payments .payment-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.payment-top .payment-top-date {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 0.2rem;
+  border-radius: var(--middle-border-radius);
+  border: 2px solid var(--color-primary);
+  cursor: pointer;
+}
+
+.payment-top .payment-top-date p {
+  font-weight: 500;
+}
+
+.payments .payment-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.payments .payment-calendar-grid small {
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-bottom: 0.3rem;
+}
+
+.payments .payment-calendar-grid h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.payments .payment-chart-cont {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.payment-chart-cont .payment-chart-img-cont {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+}
+
+.payment-chart-cont .payment-chart-img-cont img {
+  width: 100%;
+  height: 100%;
+}
+
+.payment-chart-img-cont .payment-chart-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.payment-chart-img-cont .payment-chart-inner small {
+  font-size: 0.65rem;
+}
+
+.payment-chart-img-cont .payment-chart-inner h5 {
+  font-size: 0.7rem;
+}
+
+.payment-chart-cont .payment-chart-keys {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.payment-chart-cont .payment-chart-keys > div {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 0.4rem;
+}
+
+.payment-chart-cont .payment-chart-keys .circle {
+  height: 0.6rem;
+  width: 0.6rem;
+  border-radius: 50%;
+}
+
+.payment-chart-cont .payment-chart-keys .tax {
+  background-color: var(--color-red);
+}
+
+.payment-chart-cont .payment-chart-keys .energy {
+  background-color: var(--color-yellow);
+}
+
+.payment-chart-cont .payment-chart-keys .water {
+  background-color: var(--color-primary);
+}
+
+.payment-chart-cont .payment-chart-keys .travel {
+  background-color: var(--color-purple);
+}
+
+.payment-chart-cont .payment-chart-keys .waste {
+  background-color: var(--color-green);
+}
+
+.payment-chart-cont .payment-chart-keys h5 {
+  font-weight: 400;
+  color: var(--color-gray);
+}
